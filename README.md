@@ -3,10 +3,10 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
 
 ## Requirement
-install node v20.15.1 (https://nodejs.org/en)
-install Angular Cli using npm install -g @angular/cli
-install ngx-bootstrap using ng add ngx-bootstrap
-npm install to install all dependency
+install node v20.15.1 (https://nodejs.org/en) <br />
+install Angular Cli using npm install -g @angular/cli <br />
+install ngx-bootstrap using ng add ngx-bootstrap <br />
+npm install to install all dependency <br />
 
 ## Development server
 
