@@ -1,0 +1,39 @@
+<div class="d-flex justify-content-center align-item-center m-4">
+  <div class="card p-2 bg-info card-width">
+    <form (ngSubmit)="addTask()">
+      <div class="mb-3">
+        <label class="form-label text-light h6">Title</label>
+        <input
+          [(ngModel)]="task.title"
+          name="text"
+          type="text"
+          class="form-control"
+          placeholder="Title"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-light h6">Description</label>
+        <textarea
+          [(ngModel)]="task.desc"
+          class="form-control"
+          placeholder="Description"
+          name="desc"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="mb-3 text-end">
+        <button class="btn btn-primary" type="submit">{{isEditing ? 'Update Task' : 'Add Task'}}</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div
+  class="d-flex justify-content-center align-item-center"
+  *ngIf="showError || isTaskSubmitted"
+>
+  <app-show-alert
+    class="card-width text-center"
+    [color]="showError ? 'danger' : 'success'"
+    [massage]="showError ? showError : isTaskSubmitted"
+  ></app-show-alert>
+</div>

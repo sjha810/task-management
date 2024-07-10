@@ -1,0 +1,19 @@
+<div class="bg-info text-light p-3">
+  <div class="row align-items-center">
+    <div class="col-md-4 text-md-start text-center">
+      <p class="m-0 h4">Task Management</p>
+    </div>
+    <div class="col-md-8 mt-2 text-md-end text-center">
+      <a *ngFor="let route of routes"
+        [routerLink]="route.path"
+        class="me-md-2 px-2 mb-2 mb-md-0 text-decoration-none text-light pointer"
+        >{{route.name}}</a
+      >
+      <!-- <a
+        routerLink="/task-list"
+        class="px-md-2 text-decoration-none text-light pointer"
+        >Task List</a
+      > -->
+    </div>
+  </div>
+</div>

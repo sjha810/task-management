@@ -1,0 +1,25 @@
+/* Default width for desktop */
+.card-width {
+  width: 30%;
+}
+
+/* Media query for tablets (landscape orientation) */
+@media (max-width: 1024px) {
+  .card-width {
+    width: 50%;
+  }
+}
+
+/* Media query for tablets and mobile devices (portrait orientation) */
+@media (max-width: 768px) {
+  .card-width {
+    width: 80%;
+  }
+}
+
+/* Media query for small mobile devices (portrait orientation) */
+@media (max-width: 480px) {
+  .card-width {
+    width: 100%;
+  }
+}

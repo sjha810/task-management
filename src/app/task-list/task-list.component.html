@@ -1,0 +1,8 @@
+<app-dynamic-table
+  [columns]="columns"
+  [tasks]="tasks"
+  [title]="'Task List'"
+  (deleteTask)="deleteTaskRow($event)"
+  (completeTask)="makeTaskComplete($event)"
+  (editTaskRow)="editTask($event)"
+></app-dynamic-table>
